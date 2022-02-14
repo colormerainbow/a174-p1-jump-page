@@ -3,6 +3,8 @@ Margaret's ARTDM-174 GitHub Repository
 
 This is Margaret's main repository for ARTDM-174 web designs.
 The published website url: https://colormerainbow.github.io/a174-p1-jump-page/
+
+
 Revision Notes:
 In commit: 0d9e4a8
   Also fixed the due date formatting per instructor feedback
