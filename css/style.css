@@ -6,7 +6,7 @@
   box-sizing: border-box;
 }
 
-body {
+.wrapper {
   margin: 0 auto;
   font-size: 1.2rem;
   font-family: 'Nunito Sans', sans-serif;
@@ -70,8 +70,60 @@ h3,
 aside li {
   margin: 0 0 0 2rem;
 }
+/* CSS Animation for Page Load */
+html {
+  height: 100%;
+}
+body {
+  background: transparent;
+  margin: 0;
+}
 
-/* Adding CSS Animation effects on page load */
+.wrapper {
+  animation-name: shift-in;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.load-img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 110%;
+  width: 110%;
+  margin: 0;
+  background: #fff url(../images/gwen-weustink-I3C1sSXj1i8-unsplash-sm.jpg) no-repeat center/cover;
+  animation-name: blur-out;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes blur-out {
+  0%, 25% {
+      filter: blur(0);
+      opacity: 1;
+  }
+
+  100% {
+      filter: blur(20px);
+      opacity: 0.1;
+  }
+}
+@keyframes shift-in {
+  0%,
+  50% {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+
+/* PUT THIS ON HOLD  - Adding CSS Animation effects on page load 
 body {
   animation-name: fade-in-load;
   animation-duration: 3s;
@@ -96,6 +148,7 @@ body {
     filter: blur(0px);
   }
 }
+*/
 
 /* use flexbox to style the contents inside projects and labs boxes */
 .projects li,
@@ -184,7 +237,7 @@ footer {
 
 /* style overrides for medium screen layouts */
 @media screen and (min-width: 650px) {
-  body {
+  .wrapper {
     font-size: 1rem;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
