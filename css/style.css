@@ -53,6 +53,9 @@ h2 {
   padding: 1rem 0 .5rem 0;
   font-family: 'Quicksand', sans-serif;
 }
+.category {
+  text-shadow: 0 2px 2px #faf9f9;
+}
 
 h3,
 .label {
