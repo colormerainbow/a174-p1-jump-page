@@ -101,7 +101,7 @@ body {
   padding: 5px 10px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content:flex-start;
   background: #bee3db;
   box-shadow: 0px 5px 5px #555b6e;
   border-radius: 20px;
@@ -118,6 +118,20 @@ ol {
   font-style: italic;
   font-family: 'Quicksand', sans-serif;
   padding-bottom: .5rem;
+}
+.comingsoon {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 1rem;
+  font-style: oblique;
+  font-weight: bold;
+  border: .1rem solid #ffd6ba;
+  border-radius: 50%;
+  background: #ffd6ba;
+}
+.detail {
+font-size: .85rem;
+padding: 1rem;
 }
 
 /* ----Format for the site footer  -----*/
@@ -154,7 +168,7 @@ footer {
 
 /* end basic mobile-first styling */
 
-/* adding transition effects for responsive page */
+/* adding transition effects for link tags to give feedback to user that the links are active*/
 .projects h3,
 .labs h3 {
   transition: all .5s ease-in-out;
@@ -232,6 +246,7 @@ footer {
   .label {
     padding: 1rem 0 0 0;
   }
+
 }
 
 /* style overrides for wider screen layouts */
@@ -243,8 +258,12 @@ footer {
   aside {
     grid-column: 10 / span 3;
   }
+}
 
-  /* apply CSS Animations to the latter part of page load for large screen sizes only */
+  /* PLAN TO REMOVE THIS ANIMATION - temporary demonstration of CSS animations ability */
+
+  /* CSS Animations to the latter part of page load for large screen sizes only */
+  /*
   .projects {
     animation-name: flip-in;
     animation-duration: .5s;
@@ -325,3 +344,4 @@ footer {
   }
 
 }
+*/
