@@ -109,6 +109,7 @@ body {
       opacity: 0.1;
   }
 }
+
 @keyframes shift-in {
   0%,
   50% {
@@ -121,34 +122,6 @@ body {
       transform: translateY(0);
   }
 }
-
-
-/* PUT THIS ON HOLD  - Adding CSS Animation effects on page load 
-body {
-  animation-name: fade-in-load;
-  animation-duration: 3s;
-}
-
-@keyframes fade-in-load {
-
-  0%,
-  25% {
-    background-image: url(../images/randall-ruiz-LVnJlyfa7Zk-unsplash.jpg);
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    filter: blur(10px);
-  }
-
-  95% {
-    opacity: 1;
-  }
-
-  100% {
-    filter: blur(0px);
-  }
-}
-*/
 
 /* use flexbox to style the contents inside projects and labs boxes */
 .projects li,
@@ -173,7 +146,13 @@ ol {
   font-size: .8rem;
   font-style: italic;
   font-family: 'Quicksand', sans-serif;
-  padding-bottom: .5rem;
+}
+.repo-page {
+  font-size: .8rem;
+  margin-bottom: 1rem;
+}
+.repo-page a {
+  color: rgb(194, 18, 194);
 }
 .comingsoon {
   text-align: center;
@@ -181,7 +160,7 @@ ol {
   margin: 1rem;
   font-style: oblique;
   font-weight: bold;
-  border: .1rem solid #ffd6ba;
+  border: .1rem solid #555b6e;;
   border-radius: 50%;
   background: #ffd6ba;
 }
@@ -315,89 +294,3 @@ footer {
     grid-column: 10 / span 3;
   }
 }
-
-  /* PLAN TO REMOVE THIS ANIMATION - temporary demonstration of CSS animations ability */
-
-  /* CSS Animations to the latter part of page load for large screen sizes only */
-  /*
-  .projects {
-    animation-name: flip-in;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-  }
-
-  .labs {
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-  }
-
-  aside {
-    animation-name: spin-in;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-delay: 2.5s;
-  }
-
-  @keyframes flip-in {
-    0% {
-      background-color: #bee3db;
-      transform: translate(0, 0) rotateY(0deg) rotateX(0deg);
-      opacity: 0;
-    }
-
-    25% {
-      background-color: #555b6e;
-      transform: translate(200px, 0) rotateY(180deg) rotateX(180deg);
-    }
-
-    50% {
-      background-color: #faf9f9;
-      transform: translate(200px, 200px) rotateY(0deg) rotateX(0deg);
-    }
-
-    75% {
-      background-color: #ffd6ba;
-      transform: translate(0, 200px) rotateY(180deg) rotateX(180deg);
-    }
-
-    100% {
-      background-color: #89b0ae;
-      transform: translate(0, 0) rotateY(0deg) rotateX(0deg);
-      opacity: 1;
-    }
-  }
-}
-
-@keyframes fade-in {
-
-  0%,
-  50% {
-    opacity: 0;
-  }
-
-  100% {
-    transform: rotate(-3600deg);
-    transform-origin: 20% 40%;
-    filter: blur(0);
-  }
-
-}
-
-@keyframes spin-in {
-
-  0%,
-  66% {
-    opacity: 0;
-  }
-
-  100% {
-    transform: rotate(7200deg);
-    transform-origin: 20% 40%;
-    filter: blur(0);
-  }
-
-}
-*/
